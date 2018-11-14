@@ -40,7 +40,7 @@
       text-decoration: none;
       transition: 0.1s background cubic-bezier(0.6, -0.28, 0.74, 0.05), 0.1s box-shadow cubic-bezier(0.6, -0.28, 0.74, 0.05);
       font-weight: 400;
-      font-size: 1.25em;
+      font-size: 1em;
     }
     a:hover {
       color: #3f4040;
@@ -51,13 +51,17 @@
     a:visited {
       color: #5929b2
     }
-    p {
+    .section-title {
       font-family: "Merriweather", serif;
       text-transform: uppercase;
       font-size: 0.75em;
     }
     section {
       padding-bottom: 10px;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0 0 0 5px;
     }
   </style>
 
@@ -68,7 +72,7 @@
 
   <h1>Roger Steve Ruiz has a landing page</h1>
   <section>
-    <p>Pertinent links</p>
+    <p class="section-title">Pertinent links</p>
     <ul>
       <li><a href="https://write.rog.gr">https://write.rog.gr</a></li>
       <li><a href="https://github.com/rogeruiz">https://github.com/rogeruiz</a></li>
@@ -80,7 +84,7 @@
     </ul>
   </section>
   <section>
-    <p>Currently working with</p>
+    <p class="section-title">Currently working with</p>
     <ul>
       <li><a href="https://bosh.io/docs/">https://bosh.io/docs/</a></li>
       <li><a href="https://docs.cloudfoundry.org">https://docs.cloudfoundry.org</a></li>
