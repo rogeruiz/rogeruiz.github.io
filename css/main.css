@@ -32,7 +32,7 @@ body {
   place-items: center;
   padding: 2rem;
   font-family: var(--font-family);
-  color: var(--dark-color);
+  color: var(--light-color);
   background: var(--bg-gradient);
 }
 
@@ -57,10 +57,10 @@ strong {
   padding: 8rem 6rem;
   display: flex;
   align-items: center;
-  background: rgba(255, 255, 255, 0.75);
+  background: rgba(0, 0, 0, 0.375);
   box-shadow: 0 0.75rem 2rem 0 rgba(0, 0, 0, 0.1);
-  border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.125);
+  border-radius: 0.5rem;
+  border: 5px solid rgba(89, 41, 178, 0.125);
 }
 
 .overlay__inner {
@@ -74,6 +74,7 @@ strong {
   font-weight: 300;
   letter-spacing: -0.025em;
   margin-bottom: 1.5rem;
+  text-transform: uppercase;
 }
 
 .text-gradient {
@@ -141,20 +142,20 @@ a {
   background-color: transparent;
   box-shadow: 1px 1px transparent;
   text-decoration: underline;
-  color: #242313;
+  color: #fbf2ff;
   transition: 0.1s background cubic-bezier(0.6, -0.28, 0.74, 0.05), 0.1s box-shadow cubic-bezier(0.6, -0.28, 0.74, 0.05);
   font-weight: 400;
   font-size: 1em;
   line-height: 1.5rem;
 }
 a:hover {
-  color: #3f4040;
+  color: #242313;
   background: #fbf2ff;
   box-shadow: 2px 2px 5px #f3eff4;
   text-decoration: none;
 }
 a:visited {
-  color: #5929b2
+  color: rgba(185, 151, 247, 0.5);
 }
 .section-title {
   font-family: "Merriweather", serif;
@@ -168,5 +169,8 @@ ul {
   list-style-type: none;
   padding: 0 0 0 5px;
   margin-bottom: 3rem;
+}
+ul > li:before {
+  content: '➡️ ';
 }
 
